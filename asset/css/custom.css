@@ -1,0 +1,283 @@
+.tg-haslayout{
+	width:100%;
+	float:left;
+}
+
+.tg-main-section > div { position:relative;}
+.tg-location-map{
+	width: 100%;
+	float: left;
+	height: 500px;
+}
+.tg-bgstyleone,
+.tg-bgstyletwo{
+	overflow:hidden;
+	position:relative;
+}
+/*=============================================
+			Upcoming Match Counter
+=============================================*/
+
+.tg-bgboxone,
+.tg-bgboxtwo{
+	top:0;
+	z-index:1;
+	height:100%;
+	position:absolute;
+	background:#373542;
+}
+.tg-bgstyleone .tg-bgboxone{
+	left:auto;
+	right:0;
+}
+.tg-bgboxone{
+	left:0;
+	z-index:2;
+	width:68.5%;
+}
+.tg-bgboxone:before{
+	top:0;
+	width:0;
+	height:0;
+	left:100%;
+	content:'';
+	position:absolute;
+	border-top: 700px solid #373542;
+	border-right: 70px solid transparent;
+}
+.tg-bgstyleone .tg-bgboxone:before{display:none;}
+.tg-bgstyleone .tg-bgboxone:after{
+	top:0;
+	width:0;
+	height:0;
+	right:100%;
+	content:'';
+	position:absolute;
+	border-bottom: 700px solid #373542;
+	border-left: 70px solid transparent;
+}
+.tg-bgstyleone .tg-bgboxtwo{
+	right:auto;
+	left:0;
+}
+.tg-bgboxtwo{
+	right:0;
+	width:31.5%;
+}
+.tg-bgpattrant{
+	width:100%;
+	float:left;
+	z-index:2;
+	position:relative;
+}
+
+/*=============================================
+			Fixtures Style
+=============================================*/
+.tg-upcomingmatch{
+	width:100%;
+	float:left;
+	height:360px;
+	overflow:hidden;
+	margin:0 0 50px;
+}
+.tg-upcomingmatch .tg-match {
+	padding:0;
+	overflow:hidden;
+	position:relative;
+}
+.tg-match address,
+.tg-upcomingmatch .tg-match h3{ color:#fff; transition:0.5s ; -webkit-transition:0.5s ; -moz-transition:0.5s ; -ms-transition:0.5s ; -o-transition:0.5s ; }
+.tg-matchdetail{
+	width:100%;
+	float:left;
+	padding:20px;
+	z-index:1;
+	position:relative;
+}
+.tg-matchhover{
+	top:0;
+	left:0;
+	z-index:2;
+	width:100%;
+	height:100%;
+	padding:30px;
+	position:absolute;
+	background:#373542;
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	transform: translateX(-100%);
+	transition: 0.7s;
+	-webkit-transition: 0.7s;
+	-moz-transition: 0.7s;
+	-ms-transition: 0.7s;
+	-o-transition: 0.7s;
+}
+.tg-upcomingmatch .tg-match:hover .tg-matchhover{
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+}
+.tg-matchhover address{
+	width:170px;
+	float:left;
+	margin:5px 0;
+	font-style:normal;
+}
+.tg-matchhover .tg-btnbox{
+	overflow:hidden;
+	float:none;
+	width:auto;
+	z-index:1;
+	text-align:right;
+	position:relative;
+}
+.tg-matchhover .tg-btnbox .tg-btn{padding:0 30px;}
+.tg-upcomingmatch .tg-match h3{ color:#373542;}
+.tg-upcomingmatch .tg-match + .tg-match{margin:10px 0 0;}
+.tg-upcomingmatch .tg-match .tg-box{width:10%;}
+.tg-upcomingmatch .tg-match .tg-box:last-child,
+.tg-upcomingmatch .tg-match .tg-box:first-child{width:45%;}
+.tg-upcomingmatch .tg-match .tg-box h3{ margin:23px 0;}
+
+/*=============================================
+			Top Rated Player Style
+=============================================*/
+.tg-players{
+	width:100%;
+	float:left;
+	height:466px;
+}
+.mCSB_inside > .mCSB_container{ margin-right:10px;}
+.mCSB_scrollTools{ width:6px;}
+.mCSB_scrollTools .mCSB_draggerRail{
+	margin:0;
+	width:6px;
+	opacity:1;
+	border-radius:0;
+	background:#f7f7f7;
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	width:6px;
+	margin:0;
+	opacity:1;
+	border-radius:0;
+	background-color:#373542;
+}
+.tg-player{
+	width:100%;
+	float:left;
+	height:150px;
+	overflow:hidden;
+	background:#f7f7f7;
+}
+
+.tg-player + .tg-player{margin:10px 0 0;}
+.tg-player:hover{
+	height:300px;
+	transition: 0.7s;
+	-webkit-transition: 0.7s;
+	-moz-transition: 0.7s;
+	-ms-transition: 0.7s;
+	-o-transition: 0.7s;
+}
+.tg-player figure{
+	float:left;
+	width:100%;
+	margin:0;
+	padding:10px 0 0;
+}
+.tg-player figure a{ display:block;}
+.tg-player figure a img{
+	display:block;
+	margin:0 auto;
+	text-align:center;
+}
+.tg-playcontent{
+	width:100%;
+	float:left;
+	padding:48px 0;
+}
+.tg-playcontent h3{
+	margin:11px 0;
+	width:100%;
+	float:left;
+	font-size:24px;
+	line-height:24px;
+}
+.tg-playcontent .tg-stars{ margin:0 0 20px;}
+.tg-playcontent .tg-description{
+	color:#fff;
+	padding:20px 0;
+	border-top:1px solid #aeaeae;
+}
+.tg-playcontent .tg-description p{ margin:0;}
+.tg-playcontent .tg-socialicons{
+	width:100%;
+	float:left;
+}
+.tg-playcontent .tg-socialicons li{
+	display:block;
+	float:left;
+}
+.tg-playcontent .tg-socialicons li:first-child{ padding-left:0;}
+/*=============================================
+			Points Table
+=============================================*/
+.tg-pointstablewrapper{
+	width:100%;
+	float:left;
+}
+.tg-pointstablewrapper figure{
+	width:100%;
+	float:left;
+	margin:0;
+	padding:21px 0 24px 0;
+}
+.tg-pointstablewrapper figure img{
+	max-width:none;
+	width:none;
+	display:block;
+	margin:0;
+}
+.tg-pointstable{
+	width:100%;
+	float:left;
+	padding:80px 0 0;
+}
+.tg-pointstable h2{ color:#fff;}
+.tg-pointstable-slider{
+	width:100%;
+	float:left;
+	height:375px;
+	margin:0 0 30px;
+	overflow:hidden;
+}
+.tg-pointtable{
+	width:100%;
+	float:left;
+	background:#f7f7f7;
+}
+.tg-pointtable .tg-box{
+	width:50%;
+	padding:15px;
+	text-align:left;
+	font-size:16px;
+	line-height:25px;
+	text-transform:uppercase;
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+.tg-pointtable .tg-box:nth-child(2n+1){background:#fff;}
+.tg-pointtable .tg-box + .tg-box{
+	width:12.5%;
+	float:left;
+	text-align:center;
+}
+
